@@ -126,6 +126,9 @@ if ! [ -e "$XDG_CONFIG_HOME/zsh/device-specific.sh" ]; then
 fi
 source "$XDG_CONFIG_HOME/zsh/device-specific.sh"
 
+# Extract utility (like unzip)
+source "$XDG_CONFIG_HOME/zsh/archive.sh"
+
 ###
 ### Plugins
 ###
