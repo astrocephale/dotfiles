@@ -5,5 +5,5 @@ rustflags = ["-C", "link-arg=--ld-path=/usr/bin/mold"]
 [net]
 git-fetch-with-cli = true
 
-# [build]
-# rustc-wrapper = "/home/astro/.cargo/bin/sccache"
+[build]
+rustc-wrapper = "/bin/sccache"

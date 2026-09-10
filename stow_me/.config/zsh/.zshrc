@@ -68,9 +68,12 @@ alias ssr='sudo systemctl restart'
 alias sst='sudo systemctl stop'
 alias k='systemctl --user restart kanata.service'
 
-alias install='sudo pacman -S'
-alias update='sudo pacman -Syu'
-alias remove='sudo pacman -Rns'
+if command -v pacman &> /dev/null; then
+  alias install='sudo pacman -S'
+  alias search='pacman -Ss'
+  alias update='sudo pacman -Syu'
+  alias remove='sudo pacman -Rns'
+fi
 
 # git aliases
 alias gcl='. gcl'
