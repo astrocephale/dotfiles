@@ -2,6 +2,7 @@ require('lazy').setup({
   'psliwka/vim-smoothie',
   { 'kylechui/nvim-surround', opts = {} },
   { 'NMAC427/guess-indent.nvim', opts = {} },
+  { 'akinsho/git-conflict.nvim', version = '*', config = true },
 
   require 'kickstart.plugins.gitsigns',
   require 'kickstart.plugins.which-key',
